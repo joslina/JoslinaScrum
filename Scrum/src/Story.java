@@ -5,7 +5,7 @@ public class Story
 	static String i_Want_to;
 	static String so_that;
 	static int priority, point;
-	List<String> Tasks = new ArrayList<String>();
+	List<Task> Tasks = new ArrayList<Task>();
 	public Story(String as_a, String i_Want_to, String so_that, int priority, int point)
 	{
 		Story.as_a=as_a;
@@ -14,8 +14,11 @@ public class Story
 		Story.priority=priority;
 		Story.point=point;
 	}
-	public void setTask(String task)
+	public void setTask(String string, int i)
 	{
-		Tasks.add(task);
+		Task newTask= new Task();
+		newTask.name=string;
+		newTask.duration=i;
+		Tasks.add(newTask);
 	}
 }
