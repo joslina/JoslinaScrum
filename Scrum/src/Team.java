@@ -2,6 +2,7 @@ import java.util.*;
 public class Team
 {
 	public String ProductOwner, ScrumMaster, Customer;
+	int velocity;
 	List<String> Members = new ArrayList<String>();
 	public void setProductOwner(String ProductOwner)
 	{
@@ -19,5 +20,9 @@ public class Team
 	public void setCustomer(String Customer)
 	{
 		this.Customer=Customer;
+	}
+	public void setVelocity(int velocity)
+	{
+		this.velocity=velocity;
 	}
 }
