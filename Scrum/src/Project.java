@@ -1,4 +1,3 @@
-import java.util.*;
 public class Project
 {
 	public String title;
@@ -6,5 +5,4 @@ public class Project
 	{
 		this.title=title;
 	}
-	
 }
