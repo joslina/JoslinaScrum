@@ -13,6 +13,15 @@ public class Story
 		Story.so_that=so_that;
 		Story.priority=priority;
 		Story.point=point;
+		//print_Story();
+	}
+	@SuppressWarnings("unused")
+	private void print_Story()
+	{
+		System.out.println(as_a + ", " + i_Want_to + ", " +so_that);
+		System.out.println("Story priority "+priority);
+		System.out.println("Story priority "+point);
+		
 	}
 	public void setTask(String string, int i)
 	{
